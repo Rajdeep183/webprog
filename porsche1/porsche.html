@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche 911 GT3</title>
+    <link rel="icon" href="pngwing.com.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="Porsche_Css/header.css">
+    <link rel="stylesheet" href="Porsche_Css/Sliding.css">
+    <link rel="stylesheet" href="Porsche_Css/main.css">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" id="close-btn">
+            <i class="ri-close-line"></i>
+        </div>
+        <div class="menu-content">
+            <ul class="menu-items">
+                <li class="item">
+                    <div class="submenu-item" id="models-item">
+                        <span>Models</span>
+                        <i class="ri-arrow-right-wide-fill remix-icon1"></i>
+                    </div>
+                    <ul class="menu-items submenu Porsches-active1">
+                        <li class="Porsches">
+                            <a href="#"><img src="CAR_Images/718.webp"></a>
+                        </li>
+                        <li class="Porsches">
+                            <a href="#"><img src="CAR_Images/911.webp"></a>
+                        </li>
+                        <li class="Porsches">
+                            <a href="#"><img src="CAR_Images/taycan.webp"></a>
+                        </li>
+                        <li class="Porsches">
+                            <a href="#"><img src="CAR_Images/panamera.webp"></a>
+                        </li>
+                        <li class="Porsches">
+                            <a href="#"><img src="CAR_Images/macan.webp"></a>
+                        </li>
+                        <li class="Porsches">
+                            <a href="#"><img src="CAR_Images/cayenne.webp"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <div class="submenu-item">
+                        <span>Vehicle Purchase</span>
+                        <i class="ri-arrow-right-wide-fill remix-icon1"></i>
+                    </div>
+                    <ul class="menu-items submenu">
+                        <li class="item"><a href="#">Configure</a></li>
+                        <li class="item"><a href="#">Compare Models</a></li>
+                        <li class="item"><a href="#">Find New and Pre-owned Vehicles</a></li>
+                        <li class="item"><a href="#">Find Connect Services</a></li>
+                        <li class="item"><a href="#">E-Mobility & E-Performance</a></li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <div class="submenu-item">
+                        <span>Services</span>
+                        <i class="ri-arrow-right-wide-fill remix-icon1"></i>
+                    </div>
+                    <ul class="menu-items submenu">
+                        <li class="item"><a href="#">Factory Delivery</a></li>
+                        <li class="item"><a href="#">Service & Maintenance</a></li>
+                        <li class="item"><a href="#">Tequipment &#8722; Genuine Accessories</a></li>
+                        <li class="item"><a href="#">Exclusive Manufacture-Individual Vehicles</a></li>
+                        <li class="item"><a href="#">Classic &#8722; Service & Parts</a></li>
+                        <li class="item"><a href="#">Approved &#8722; Pre-owned Cars & Warranty</a></li>
+                        <li class="item"><a href="#">Lifestyle &#8722; Fashion & Accessories</a></li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <div class="submenu-item">
+                        <span>Experience</span>
+                        <i class="ri-arrow-right-wide-fill remix-icon1"></i>
+                    </div>
+                    <ul class="menu-items submenu">
+                        <li class="item"><a href="#">Motorsport</a></li>
+                        <li class="item"><a href="#">Porsche Experience &#8722; Driving & Track Experiences</a></li>
+                        <li class="item"><a href="#">Porsche Clubs</a></li>
+                        <li class="item"><a href="#">Golf Sports</a></li>
+                        <li class="item"><a href="#">Stories &#8722; People.Passion.Places.</a></li>
+                        <li class="item"><a href="#">Christophorus &#8722; The Porsche Magazine</a></li>
+                        <li class="item"><a href="#">Visit the Museum and Factory</a></li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <div class="submenu-item">
+                        <span>My Porsche</span>
+                        <i class="ri-arrow-right-wide-fill remix-icon1"></i>
+                    </div>
+                    <ul class="menu-items submenu">
+                        <li>
+                            <button class="log-in">Log in</button>
+                            <button class="discover-more">Discover More</button>
+                        </li>
+                        <li class="register1"><span class="register"><a href="#" style="text-decoration: underline;padding: 3px;transition: all0.3s ease; border-radius: 3px;">Register now</a> if you don't have an account yet.</span></li>
+                        <li class="item"><a href="#">Profile Settings</a></li>
+                        <li class="item"><a href="#">Messages</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="menu" id="menu-btn"><i class="ri-menu-line"></i> Menu</div>
+        <div class="porsche"><img src="CAR_Images/PORSCHE.png" width="280px" height="auto" class="porsche-image"></div>
+        <div class="profile"><i class="ri-user-3-line"></i></div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="container">
+        <div class="car-container">
+            <div class="GT3">911 GT3</div>
+            <div class="GT3-with">911 GT3 with Touring Package</div>
+            <img class="background" src="CAR_Images/porsche-back.webp" alt="Background Image">
+            <img class="car active" src="CAR_Images/porsche-normal.webp" alt="Car 1" width="100%" height="auto">
+            <img class="car inactive" src="CAR_Images/porsche-12.webp" alt="Car 2" width="100%" height="auto">
+        </div>
+        <div class="info active">
+            <div class="power"><strong>375kW/510 PS</strong><br><span style="font-size:16px">Power(kW)/Power(PS)</span>
+            </div>
+            <div class="power">
+                <strong>3,4s</strong> <br> <span style="font-size:16px">Acceleration 0-100 km/h</span>
+            </div>
+            <div class="power"><strong>318 km/h</strong><br><span style="font-size:16px">Top-speed</span>
+            </div>
+            <div class="fuel">
+                <div class="hover-message">
+                    <div class="wltp">WLTP*</div>
+                    <div class="gas-station">
+                        <div class="fuel-use">
+                            <i class="ri-gas-station-line remix-icon"></i>
+                            <div class="fuel-usage">13,0 - 12,9<br><span style="font-size: 13px;">1/100km</span>
+                            </div>
+                        </div>
+                        <div class="fuel-use">
+                            <span class="co2">CO&#8322;</span>
+                            <div class="fuel-usage">294 - 293<br><span style="font-size: 13px;">g/km</span>
+                            </div>
+                        </div>
+                        <div class="fuel-hover">
+                            <div class="fuel-hover1">
+                                <span style="font-size: 20px;font-weight: 400;">911 GT3 (WLTP)*</span><br><br><span style="font-size: 16px;color: #8e9397;">Consumption/Emission WLTP*</span><br><span style="font-weight: 300;font-size: 16px;">Fuel consumption combined: 13,0 - 12,91/100 km <br><br> CO2-Emissions combined(WLTP):294-293 g/km</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="Technical"><i class="ri-arrow-right-s-line"></i>Technical Specs</button>
+                <button class="build"><i class="ri-arrow-right-s-line"></i>Build your Own</button>
+                <button class="compare"><i class="ri-arrow-right-s-line"></i>Compare</button>
+            </div>
+        </div>
+
+
+        <div class="info">
+            <div class="power"><strong>375kW/510 PS</strong><br><span style="font-size:16px">Power(kW)/Power(PS)</span>
+            </div>
+            <div class="power">
+                <strong>3,9s</strong> <br> <span style="font-size:16px">Acceleration 0-100 km/h</span>
+            </div>
+            <div class="power"><strong>320 km/h</strong><br><span style="font-size:16px">Top-speed</span>
+            </div>
+            <div class="fuel">
+                <div class="hover-message">
+                    <div class="wltp">WLTP*</div>
+                    <div class="gas-station">
+                        <div class="fuel-use">
+                            <i class="ri-gas-station-line remix-icon"></i>
+                            <div class="fuel-usage">13,0 - 12,9<br><span style="font-size: 13px;">1/100km</span>
+                            </div>
+                        </div>
+                        <div class="fuel-use">
+                            <span class="co2">CO&#8322;</span>
+                            <div class="fuel-usage">293 - 292<br><span style="font-size: 13px;">g/km</span>
+                            </div>
+                        </div>
+                        <div class="fuel-hover">
+                            <div class="fuel-hover1">
+                                <span style="font-size: 20px;font-weight: 400;">911 GT3 (WLTP)*</span><br><br><span style="font-size: 16px;color: #8e9397;">Consumption/Emission WLTP*</span><br><span style="font-weight: 300;font-size: 16px;">Fuel consumption combined: 13,0 - 12,91/100 km <br><br> CO2-Emissions combined(WLTP):294-293 g/km</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="Technical"><i class="ri-arrow-right-s-line"></i>Technical Specs</button>
+                <button class="build"><i class="ri-arrow-right-s-line"></i>Build your Own</button>
+                <button class="compare"><i class="ri-arrow-right-s-line"></i>Compare</button>
+            </div>
+        </div>
+        <button class="prev" onclick="prevCar()">&#10094;</button>
+        <button class="next" onclick="nextCar()">&#10095;</button>
+        <div class="Back" onclick="BackCar()"><i class="ri-contract-left-line remix-icon"></i> Back to beginning</div>
+        <input type="radio" id="radio-1" class="radio-1" name="radio" onclick="prevCar1()" checked><label class="label" for="radio-1"></label>
+        <input type="radio" id="radio-2" class="radio-2" name="radio" onclick="nextCar1()"><label class="label" for="radio-2"></label>
+    </div>
+
+    <div class="main-content">
+        <nav class="sticky-bar">
+            <div class="marker" id="marker"></div>
+            <a href="#concept">911 GT3 concept</a>
+            <a href="#details">Details</a>
+            <a href="#360-degree">360&#176; Exterior</a>
+            <a href="#Models-data">Models & Data</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#porsche-design">Porsche Design</a>
+            <a href="#Personalisation">Personalisation</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="touring-package">
+            <div class="touring-package1">
+                <img src="CAR_Images/porsche-preview.webp">
+            </div>
+            <div class="touring-package2">
+                <div class="touring-package3">
+                    <span style="font-size: 22px; margin-bottom: 12px;font-weight: 500;">The new 911 GT3 with Touring Package.</span>
+                </div>
+
+                <span style="width:450px;font-size: 17px;font-weight: 300;margin-top: 10px;line-height: 25px;">The 911 GT3 with Touring Package also sets the performance tone – but with focus primarily on the road. Thanks to ingenious aerodynamics, cornering remains impressive, even without
+                    a large rear wing.</span><br><br>
+
+                <div class="touring-button"><button class="discover-touring"><i class="ri-share-box-fill"></i> Discover more</button></div>
+            </div>
+        </div>
+
+        <section class="concept-911" id="concept">
+            <div class="video-main">
+                <div class="video1">
+                    <video src="CAR_Images/porsche-video1.mp4" autoplay muted style="width:100%" loop class="video1-class"></video>
+                </div>
+                <div class="video1-content">
+                    <div class="content-video1">
+                        <span style="font-size: 48px; font-weight: 500;width: 500px;">911 GT3 Concept.</span><br><br><br> Carpe diem, they say – seize the day. But we are Porsche. And so our motto for the new 911 GT3 models is: carpe secundum – get the
+                        most out of every second.
+                        <br> We know that your time is precious. And every minute in the cockpit is valuable. So, we have once again intensified everything that makes a sports car: performance, tuning, aerodynamics.<br> Time flies. This is your time.
+                        Hop in.
+                    </div>
+                </div>
+            </div>
+            <div class="video-main">
+                <div class="video-2-content">
+                    <div class="video2-content">
+                        <div class="content-video2">
+                            <span style="font-size: 42px; font-weight: 600;width: 100%;line-height: 50px;">The new rear wing with swan-neck connection for additional downforce.</span><br><br>
+                            <div class="hover-message hover-message1">
+                                <div class="wltp wltp1">911 GT3 (WLTP)*</div>
+                                <div class="gas-station gas-station1">
+                                    <div class="fueluse1">
+                                        <div class="fuel-use fueluse2">
+                                            <i class="ri-gas-station-line remix-icon"></i>
+                                            <div class="fuel-usage">13,0 - 12,9<br><span style="font-size: 13px;">1/100km</span>
+                                            </div>
+                                        </div>
+                                        <div class="fuel-use fuel-use2">
+                                            <span class="co2">CO&#8322;</span>
+                                            <div class="fuel-usage">294 - 293<br><span style="font-size: 13px;">g/km</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fuel-hover fuel-hover2">
+                                        <div class="fuel-hover1 ">
+                                            <span style="font-size: 20px;font-weight: 400;">911 GT3 (WLTP)*</span><br><br><span style="font-size: 16px;color: #8e9397;">Consumption/Emission WLTP*</span><br><span style="font-weight: 300;font-size: 16px;">Fuel consumption combined: 13,0 - 12,91/100 km <br><br> CO2-Emissions combined(WLTP):294-293 g/km</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video2">
+                    <div class="videooo">
+                        <video src="CAR_Images/porsche-video2.mp4" autoplay muted style="width:100%" loop class="video1-class"></video>
+                    </div>
+                </div>
+            </div>
+            <div class="video-main">
+                <div class="video-2-content">
+                    <div class="video2-content">
+                        <div class="content-video2">
+                            <span style="font-size: 42px; font-weight: 600;width: 500px;line-height: 50px;">Large slats for increased downforce: the rear diffuser.</span><br><br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="video2">
+                    <div class="videooo">
+                        <video src="CAR_Images/porsche-video3.mp4" autoplay muted style="width:100%" loop class="video1-class"></video>
+                    </div>
+                </div>
+            </div>
+            <div class="video-main">
+                <div class="video-2-content">
+                    <div class="video2-content">
+                        <div class="content-video2">
+                            <span style="font-size: 42px; font-weight: 700;width: 500px; line-height: 50px;">Front apron with extended openings for optimised brake cooling.</span><br><br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="video2">
+                    <div class="videooo">
+                        <video src="CAR_Images/porsche-video4.mp4" autoplay muted style="width:100%" loop class="video1-class"></video>
+                    </div>
+                </div>
+            </div>
+            <div class="video-main">
+                <div class="video-2-content">
+                    <div class="video2-content">
+                        <div class="content-video2">
+                            <span style="font-size: 42px; font-weight: 700;width: 500px;line-height: 50px;">Inspired by motorsport: carbon bonnet with integrated air outlets.</span><br><br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="video2 video">
+                    <div class="videooo">
+                        <video src="CAR_Images/porsche-video5.mp4" autoplay muted style="width:100%" loop class="video1-class"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="details" id="details">
+            <div class="details-heading">
+                <div class="details-heading1">
+                    <span style="font-size: 40px; color: black; position: relative;font-weight: 600;">
+                        Discover the 911 GT3 models in detail.</span><br>
+                </div>
+                <div class="details-heading2">You already know the highlights. Here are more details about the individual chapters</div>
+            </div>
+            <div class="detail-main-main">
+                <div class="back-details-conatiner">
+                    <img src="CAR_Images/porsche-normalbackground.webp" width="100%" class="background-details">
+                </div>
+                <div class="detail-boxes">
+                    <div class="detail-links">
+                        <div class="detail-main-box">
+                            Aerodynamics and design
+                        </div>
+                        <div class="detail-message">
+                            Discover more about teh extremely aerodynamics exterior.
+                        </div>
+                        <div class="open-chapter">
+                            open chapter
+                        </div>
+                        <i class="ri-arrow-right-wide-line details-arrow"></i>
+                    </div>
+                    <div class="detail-links">
+                        <div class="detail-main-box">
+                            Performance
+                        </div>
+                        <div class="detail-message">
+                            Be inspired by the unbeatable performance.
+                        </div>
+                        <div class="open-chapter">
+                            open chapter
+                        </div>
+                        <i class="ri-arrow-right-wide-line details-arrow"></i>
+                    </div>
+                    <div class="detail-links">
+                        <div class="detail-main-box">
+                            Interior and infotainment
+                        </div>
+                        <div class="detail-message">
+                            Discover more about assistance systems and infotainment.
+                        </div>
+                        <div class="open-chapter">
+                            open chapter
+                        </div>
+                        <i class="ri-arrow-right-wide-line details-arrow"></i>
+                    </div>
+                    <div class="detail-links">
+                        <div class="detail-main-box">
+                            Motorsport
+                        </div>
+                        <div class="detail-message">
+                            Discover the roots of the 911 GT3 – motorsport.
+                        </div>
+                        <div class="open-chapter">
+                            open chapter
+                        </div>
+                        <i class="ri-arrow-right-wide-line details-arrow"></i>
+                    </div>
+                    <div class="detail-links">
+                        <div class="detail-main-box">
+                            Touring Package
+                        </div>
+                        <div class="detail-message">
+                            Motorsport look meets understatement: the 911 GT3 with Touring Package
+                        </div>
+                        <div class="open-chapter">
+                            open chapter
+                        </div>
+                        <i class="ri-arrow-right-wide-line details-arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="degree" id="360-degree">
+            <div style="display: flex;flex-direction: column; justify-content: center;">
+                <h2 style="margin-bottom: 20px;font-size: 32px; position: relative; left: 95px;width:  400px;">360&#176; Exterior</h2>
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/vLviNFGytUA" title="Porsche 911 GT3 RS 360° View" loop frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    class="video360"></iframe>
+            </div>
+        </section>
+
+        <section class="Models-data" id="Models-data">
+            <div class="models-heading"> <span style="font-size: 40px; color: black; position: relative;font-weight: 600;">
+                Select and configure 911 GT3 models.</span>
+            </div>
+            <div class="modelsbox">
+                <div class="modelsbox1">
+                    <div class="models-911">
+                        911 GT3
+                    </div>
+                    <div class="selected selected1">Selected</div>
+                    <div class="modelscar1">
+                        <img src="CAR_Images/porsche-normal.webp" alt="" class="models-car1" width="250px">
+                    </div>
+                    <div class="hover-message hover-message1 hover-message2">
+                        <div class="wltp wltp1 wltp2">WLTP*</div>
+                        <div class="gas-station gas-station1">
+                            <div class="fueluse1">
+                                <div class="fuel-use fueluse2 fueluse3">
+                                    <i class="ri-gas-station-line ri-gas-station-line1 remix-icon"></i>
+                                    <div class="fuel-usage fuel-usage1">13,0 - 12,9<br><span style="font-size: 12px;position: relative;left:-5px;top:-3px">1/100km</span>
+                                    </div>
+                                </div>
+                                <div class="fuel-use fuel-use2 fueluse3">
+                                    <span class="co2 ri-gas-station-line1 ">CO&#8322;</span>
+                                    <div class="fuel-usage fuel-usage1">294 - 293<br><span style="font-size: 12px;position: relative;left:-5px;top:-3px">g/km</span>
+                                    </div>
+                                </div>
+                                <div class="fuel-use fuel-use2 fueluse3">
+                                    <span class="co2 ri-gas-station-line1 ">CO&#8322;</span>
+                                    <div class="fuel-usage fuel-usage1" style="position: relative;top:7px">TBA</div>
+                                </div>
+                            </div>
+                            <div class="fuel-hover fuel-hover2 fuel-hover3 fuel-hover5">
+                                <div class="fuel-hover1 fuel-hover4">
+                                    <span style="font-size: 20px;font-weight: 400;">911 GT3 (WLTP)*</span><br><br><span style="font-size: 16px;color: #8e9397;">Consumption/Emission WLTP*</span><br><span style="font-weight: 300;font-size: 16px;">Fuel consumption combined: 13,0 - 12,91/100 km <br><br> CO2-Emissions combined(WLTP):294-293 g/km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modelslinks1">
+                        <div class="modelslinks">
+                            <div class="modelpower">375 kW/510 PS</div>
+                            <div class="modelpower1">Power(kW)/Power(PS)</div>
+                        </div>
+                        <div class="modelslinks">
+                            <div class="modelpower">3,4 s</div>
+                            <div class="modelpower1">Acceleration 0-100 km/h</div>
+                        </div>
+                        <div class="modelslinks">
+                            <div class="modelpower">318 km/h</div>
+                            <div class="modelpower1">Top speed</div>
+                        </div>
+                    </div>
+                    <div class="models-buttons models-buttons1">
+                        <button class="Technical Technical1"><i class="ri-arrow-right-s-line ri-arrow-right-s-line1"></i>Technical Specs</button>
+                        <button class="build build1"><i class="ri-arrow-right-s-line ri-arrow-right-s-line1"></i>Build your Own</button>
+                        <button class="compare compare1"><i class="ri-arrow-right-s-line ri-arrow-right-s-line1"></i>Compare</button>
+                    </div>
+                </div>
+                <div class="modelsbox1">
+                    <div class="models-911">
+                        911 GT3 with Touring Package
+                    </div>
+                    <div class="selected">Selected</div>
+                    <div class="modelscar1">
+                        <img src="CAR_Images/porsche-12.webp" alt="" class="models-car1" width="250px">
+                    </div>
+                    <div class="hover-message hover-message1 hover-message2">
+                        <div class="wltp wltp1 wltp2">WLTP*</div>
+                        <div class="gas-station gas-station1 gas-station2">
+                            <div class="fueluse1">
+                                <div class="fuel-use fueluse2 fueluse3">
+                                    <i class="ri-gas-station-line ri-gas-station-line1 remix-icon"></i>
+                                    <div class="fuel-usage fuel-usage1">12,9 - 12,9<br><span style="font-size: 12px;position: relative;left:-5px;top:-3px">1/100km</span>
+                                    </div>
+                                </div>
+                                <div class="fuel-use fuel-use2 fueluse3">
+                                    <span class="co2 ri-gas-station-line1">CO&#8322;</span>
+                                    <div class="fuel-usage fuel-usage1">293 - 292<br><span style="font-size: 12px;position: relative;left:-5px;top:-3px">g/km</span>
+                                    </div>
+                                </div>
+                                <div class="fuel-use fuel-use2 fueluse3">
+                                    <span class="co2 ri-gas-station-line1 ">CO&#8322;</span>
+                                    <div class="fuel-usage fuel-usage1" style="position: relative;top:7px">TBA</div>
+                                </div>
+                            </div>
+                            <div class="fuel-hover fuel-hover2 fuel-hover3">
+                                <div class="fuel-hover1 fuel-hover4">
+                                    <span style="font-size: 20px;font-weight: 400;">911 GT3 (WLTP)*</span><br><br><span style="font-size: 16px;color: #8e9397;">Consumption/Emission WLTP*</span><br><span style="font-weight: 300;font-size: 16px;">Fuel consumption combined: 12,91/100 km <br><br> CO2-Emissions combined(WLTP):293-292 g/km</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modelslinks1">
+                        <div class="modelslinks">
+                            <div class="modelpower">375 kW/510 PS</div>
+                            <div class="modelpower1">Power(kW)/Power(PS)</div>
+                        </div>
+                        <div class="modelslinks">
+                            <div class="modelpower">3,9 s</div>
+                            <div class="modelpower1">Acceleration 0-100 km/h</div>
+                        </div>
+                        <div class="modelslinks">
+                            <div class="modelpower">320 km/h</div>
+                            <div class="modelpower1">Top speed</div>
+                        </div>
+                    </div>
+                    <div class="models-buttons">
+                        <button class="Technical Technical1"><i class="ri-arrow-right-s-line ri-arrow-right-s-line1"></i>Technical Specs</button>
+                        <button class="build build1"><i class="ri-arrow-right-s-line ri-arrow-right-s-line1"></i>Build your Own</button>
+                        <button class="compare compare1"><i class="ri-arrow-right-s-line ri-arrow-right-s-line1"></i>Compare</button>
+                    </div>
+                </div>
+                <div class="models-shadowbox" id="models-shadowbox"></div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="gallery1">
+                Gallery.
+            </div>
+            <div class="firstslide">
+                <div class="first-half">
+                    <div class="firsthalf1">
+                        <div class="firsthalf-1-2"><img src="CAR_Images/first-slide_1.webp" height="210px"></div>
+                        <div class="firsthalf-1-3"><img src="CAR_Images/porsche-zoom2.webp" height="210px"></div>
+                    </div>
+                    <div class="first-half2">
+                        <img src="CAR_Images/first-slide_1_2 (2).webp" height="418px" class="first-half2">
+                    </div>
+                </div>
+                <div class="second-half">
+                    <div class="second-half1">
+                        <img src="CAR_Images/first-slide_3.webp" height="413px">
+                    </div>
+                    <div class="second-half2">
+                        <div class="second-half1-2"><img src="CAR_Images/first-slide_4.webp" height="210px"></div>
+                        <div class="second-half1-3"><img src="CAR_Images/first-slide_5.webp" height="210px" class="second-half1-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="porsche-design" id="porsche-design">
+            <div class="touring-package  watch-content">
+                <div class="touring-package1">
+                    <img src="CAR_Images/watch.webp">
+                </div>
+                <div class="touring-package2">
+                    <div class="touring-package3 watch-heading">
+                        <span style="font-size: 22px; margin-bottom: 12px;font-weight: 500;color: white;">Maximum performance never looked so good.</span>
+                    </div>
+
+                    <span style="width:450px;font-size: 17px;font-weight: 300;margin-top: 10px;line-height: 22px;color: white;">Just like its motorised counterpart, the Porsche Design Chronograph 911 GT3 captivates not just with its sleek sporting design, but also with its high-powered performance and premium craftsmanship. It comes complete with a variety of design features and materials drawn directly from the legendary sports car. It is exclusively reserved for owners of the vehicle.                    </span><br><br>
+
+                    <div class="touring-button watch-button1"><button class="discover-touring watch-button"><i class="ri-share-box-fill"></i> Discover more</button></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Personalisation" id="Personalisation">
+            <div class="personalisation-heading">
+                Personalisation & finishing.
+            </div>
+            <div class="personal-main">
+                In the Porsche Exclusive Manufaktur we offer you a variety of personalisation options for exterior and interior. For your completely personalised vehicle.
+            </div>
+            <button class="personal-button">
+                <i class="ri-arrow-right-wide-line"></i>Personalisation & finishing
+            </button>
+        </section>
+
+        <section class="contact-form" id="contact">
+            <div class="contact-heading">
+                Contact.
+            </div>
+            <div class="personal-main contact-main">
+                Contact your authorized Porsche dealer, request information, or register for exclusive Porsche news.
+            </div>
+            <button class="contact-button1">
+                <i class="ri-arrow-right-wide-line"></i>To the contact form
+            </button>
+        </section>
+
+
+    </div>
+
+    <div class="nextstep">
+        <div class="nextheading">
+            Next step.
+        </div>
+        <div class="pdfdownload" id="downloadButton">
+            <i class="ri-download-2-fill pdf"></i> Porsche models (PDF; 11,9 MB)
+        </div>
+    </div>
+
+    <div class="consumption">
+        <span class="nextheading">Consumption and Emissions.</span>
+        <div class="consumption-main">
+            <div class="hover-message hover-message1 hover-message2">
+                <div class="wltp wltp1 wltp2" style="letter-spacing: 1.5px;">911 GT3 (WLTP)*</div>
+                <div class="gas-station gas-station1 gas-station2">
+                    <div class="fueluse1">
+                        <div class="fuel-use fueluse2 fueluse3">
+                            <i class="ri-gas-station-line ri-gas-station-line1 remix-icon"></i>
+                            <div class="fuel-usage fuel-usage1">12,9 - 12,9<br><span style="font-size: 12px;position: relative;left:-5px;top:-3px">1/100km</span>
+                            </div>
+                        </div>
+                        <div class="fuel-use fuel-use2 fueluse3">
+                            <span class="co2 ri-gas-station-line1">CO&#8322;</span>
+                            <div class="fuel-usage fuel-usage1">293 - 292<br><span style="font-size: 12px;position: relative;left:-5px;top:-3px">g/km</span>
+                            </div>
+                        </div>
+                        <div class="fuel-use fuel-use2 fueluse3">
+                            <span class="co2 ri-gas-station-line1 ">CO&#8322;</span>
+                            <div class="fuel-usage fuel-usage1" style="position: relative;top:7px">TBA</div>
+                        </div>
+                    </div>
+                    <div class="fuel-hover fuel-hover2 fuel-hover3">
+                        <div class="fuel-hover1 fuel-hover4">
+                            <span style="font-size: 20px;font-weight: 400;">911 GT3 (WLTP)*</span><br><br><span style="font-size: 16px;color: #8e9397;">Consumption/Emission WLTP*</span><br><span style="font-weight: 300;font-size: 16px;">Fuel consumption combined: 12,91/100 km <br><br> CO2-Emissions combined(WLTP):293-292 g/km</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="consumption-main1">
+                <div class="hover-message hover-message1 hover-message2">
+                    <div class="wltp wltp1 wltp2 wltp3" style="letter-spacing: 1.5px;">911 GT3 with Touring Package (WLTP)*</div>
+                    <div class="gas-station gas-station1 gas-station2">
+                        <div class="fueluse1">
+                            <div class="fuel-use fueluse2 fueluse3">
+                                <i class="ri-gas-station-line ri-gas-station-line1 remix-icon"></i>
+                                <div class="fuel-usage fuel-usage1">12,9 - 12,9<br><span style="font-size: 12px;position: relative;left:-5px;top:-3px">1/100km</span>
+                                </div>
+                            </div>
+                            <div class="fuel-use fuel-use2 fueluse3">
+                                <span class="co2 ri-gas-station-line1">CO&#8322;</span>
+                                <div class="fuel-usage fuel-usage1">293 - 292<br><span style="font-size: 12px;position: relative;left:-5px;top:-3px">g/km</span>
+                                </div>
+                            </div>
+                            <div class="fuel-use fuel-use2 fueluse3">
+                                <span class="co2 ri-gas-station-line1 ">CO&#8322;</span>
+                                <div class="fuel-usage fuel-usage1" style="position: relative;top:7px">TBA</div>
+                            </div>
+                        </div>
+                        <div class="fuel-hover fuel-hover2 fuel-hover3">
+                            <div class="fuel-hover1 fuel-hover4">
+                                <span style="font-size: 20px;font-weight: 400;">911 GT3 (WLTP)*</span><br><br><span style="font-size: 16px;color: #8e9397;">Consumption/Emission WLTP*</span><br><span style="font-weight: 300;font-size: 16px;">Fuel consumption combined: 12,91/100 km <br><br> CO2-Emissions combined(WLTP):293-292 g/km</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-main">
+            <div class="footer-build">
+                <div class="footerheaders">
+                    Build & Find
+                </div>
+                <div class="footerlinks">
+                    <ul style="list-style-type:none;">
+                        <li>Build your Porsche</li>
+                        <li>Compare Models</li>
+                        <li>Search Pre-Owned</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-build">
+                <div class="footerheaders">
+                    Online services
+                </div>
+                <ul style="list-style-type:none;">
+                    <div class="footerlinks">
+                        <ul style="list-style-type:none;">
+                            <li>Sign up for news</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="footer-build">
+                <div class="footerheaders">
+                    Behind the Scenes
+                </div>
+                <div class="footerlinks">
+                    <ul style="list-style-type:none;">
+                        <li>Passion Motorsports</li>
+                        <li>Porsche Experience</li>
+                        <li>Porsche Classic</li>
+                        <li>Porsche Meuseum</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-build footer-socials">
+                <div class="footerheaders">
+                    Porsche Company
+                </div>
+                <div class="footerlinks footerlinks1">
+                    <ul style="list-style-type:none;">
+                        <li>Invester Relations</li>
+                        <li>At a Glance</li>
+                        <li>Jobs & Careers</li>
+                        <li>FAQ</li>
+                        <li>Christophorus - The Porsche Magazine</li>
+                    </ul>
+                </div><br><br>
+
+                <div class="share-main">
+                    <div class="share">
+                        <div class="share-message"><i class="ri-share-fill share-icon"></i> Share Page</div>
+                    </div>
+                    <div class="socials-share1">
+                        <div class="socials-share">
+                            <div class="sharelinks">
+                                <i class="ri-facebook-fill facebook-share"></i>
+                            </div>
+                            <div class="sharelinks">
+                                <i class="ri-twitter-x-line twiiter-share"></i>
+                            </div>
+                            <div class="sharelinks">
+                                <i class="ri-linkedin-fill linkedin-share"></i>
+                            </div>
+                            <div class="sharelinks">
+                                <i class="ri-pinterest-line pin-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br><br>
+                <div class="connect-main">
+                    <div class="connect">
+                        Connect with Porsche
+                    </div>
+                    <div class="connect-socials">
+                        <div class="sharelinks1"><i class="ri-facebook-fill facebook-share connect-share"></i></div>
+                        <div class="sharelinks1"><i class="ri-youtube-fill connect-share"></i></div>
+                        <div class="sharelinks1"><i class="ri-twitter-x-line twiiter-share connect-share"></i></div>
+                        <div class="sharelinks1"><i class="ri-pinterest-line pin-share connect-share"></i></div>
+                        <div class="sharelinks1"><i class="ri-instagram-line connect-share"></i></div>
+                        <div class="sharelinks1"><i class="ri-linkedin-fill linkedin-share connect-share"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="country-heading">
+            Change country:
+        </div>
+        <div class="region">
+            <select>
+                <option value="" disabled selected hidden>Select a Region</option>
+                <option value="1" class="option">North America</option>
+                <option value="2">Latin America</option>
+                <option value="3">Eroupe</option>
+                <option value="4">Middle East</option>
+                <option value="5">Africa</option>
+                <option value="6">Asia</option>
+                <option value="7">Australia/Oceania</option>
+            </select>
+        </div>
+        <div class="footer-content-main">
+            © 2024 Dr. Ing. h.c. F. Porsche AG. <span class="links-in-footer">Legal notice.</span> <span class="links-in-footer">Privacy Policy.</span> <span class="links-in-footer">Cookie Policy.</span> <span class="links-in-footer">Consumption/Emissions.</span>            <span class="links-in-footer">Open Source Software Notice.</span> <span class="links-in-footer">Whistleblower System.</span><br><br> * All new vehicles offered by Porsche are type-approved according to WLTP. Official NEDC values derived from
+            WLTP values are no longer available for new vehicles as of 1 January 2023 and can therefore not be provided.<br><br> Where values are indicated as ranges, they do not refer to a single, specific vehicle and are not part of the offeredproduct
+            range. They are only for the purposes of comparison between different vehicle types. Additional equipment and accessories (add-on parts, tyre formats etc.) can change relevant vehicle parameters such as weight, rolling resistance and aerodynamics.
+            These factors, in addition to weather, traffic conditions and driving behaviour, can influence the fuel/electricity consumption, CO₂ emissions, range and performance values of a vehicle.<br><br> More information about the differences between
+            WLTP and NEDC is available at <span class="links-in-footer">www.porsche.com/wltp.</span><br><br> ** Important information about the all-electric Porsche models can be found <span class="links-in-footer">here.</span >
+        </div>
+    </footer>
+
+
+    <script src="Porsche_Java/Porsche.js"></script>
+</body>
+
+</html>

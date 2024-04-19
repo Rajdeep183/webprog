@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    height: auto;
+}
+
+.car-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.car {
+    width: 875px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1.3s ease, left 1.7s ease;
+}
+
+.car.active {
+    opacity: 1;
+}
+
+.info {
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    background: transparent;
+    transition: opacity 0.2s ease, bottom 1s ease;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100%);
+    max-width: 700px;
+    text-align: center;
+}
+
+.info.active {
+    bottom: 10px;
+    opacity: 1;
+    color: #fff;
+}
+
+.GT3,
+.GT3-with {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -480%);
+    font-weight: 600;
+    font-size: 45px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease, top 1.5s ease;
+}
+
+.GT3.active,
+.GT3-with.active {
+    top: 40%;
+    opacity: 1;
+}
+
+.power {
+    transform: translateY(-150px);
+    font-size: 20px;
+    text-align: center;
+}
+
+button {
+    position: absolute;
+    top: 44%;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.Back {
+    width: auto;
+    height: auto;
+    background: transparent;
+    position: absolute;
+    border: 0.8px solid #fff;
+    color: #fff;
+    right: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    display: none;
+    padding: 11px 16px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.Back:hover {
+    border-color: red;
+    color: red;
+}
+
+.remix-icon {
+    font-size: 16px;
+    margin-right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.prev {
+    left: 0px;
+}
+
+.next {
+    right: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 0px 10px;
+    }
+    .container {
+        width: 100%;
+    }
+    .car {
+        width: 100%;
+    }
+    .info {
+        width: calc(100% - 40px);
+        bottom: -100%;
+    }
+    .info.active {
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 0px 5px;
+    }
+    .car {
+        width: 100%;
+    }
+    .info {
+        width: calc(100% - 40px);
+        bottom: 100%;
+    }
+    .info.active {
+        bottom: 20px;
+    }
+    .prev,
+    .Back {
+        display: none;
+    }
+}
+
+.fuel {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    font-size: 17px;
+    text-align: left;
+    bottom: 80px;
+    left: -30px;
+    cursor: pointer;
+}
+
+.fuel-usage {
+    padding-top: 7px;
+    margin-left: 10px;
+    line-height: 17px;
+}
+
+.wltp {
+    cursor: pointer;
+    text-align: left;
+    padding: 7px 0px;
+    color: #b1b5b8;
+}
+
+.fuel-use {
+    display: flex;
+    margin-right: 30px;
+}
+
+.ri-gas-station-line {
+    font-size: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gas-station {
+    display: flex;
+}
+
+.co2 {
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Technical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 113%;
+    font-size: 16px;
+    width: 170px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.build {
+    position: absolute;
+    right: -124%;
+    font-size: 16px;
+    width: 166px;
+    padding: 11px 12px 11px 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.compare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -167%;
+    width: auto;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0px 21px 0px 11px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.compare:hover,
+.build:hover,
+.Technical:hover {
+    border-color: red;
+    color: red;
+}
+
+.ri-arrow-right-s-line {
+    font-size: 23px;
+}
+
+.fuel-hover {
+    width: 420px;
+    padding: 40px 20px 40px 55px;
+    position: absolute;
+    left: -27%;
+    bottom: 98%;
+    background-color: #fff;
+    color: black;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hover-message:hover .fuel-hover {
+    display: block;
+    box-shadow: 0px 4px 20px rgba(182, 229, 238, 0.3);
+    opacity: 1;
+}
+
+.fuel-hover1 {
+    position: relative;
+}
+
+.radio-1 {
+    position: absolute;
+    bottom: 5%;
+    left: 49%;
+    cursor: pointer;
+}
+
+.radio-2 {
+    position: absolute;
+    bottom: 5%;
+    left: 51%;
+    cursor: pointer;
+}
